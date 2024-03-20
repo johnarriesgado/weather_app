@@ -103,3 +103,6 @@ Offer users the ability to access historical weather data for a specific city. D
 Scalability Considerations:
 Ensure scalability as the application evolves and introduces new features. Evaluate scalability requirements based on anticipated user traffic and data volume, design the architecture with scalability in mind, and implement scalable components such as cloud-based infrastructure and distributed databases. Use caching mechanisms, monitoring tools, and auto-scaling policies for dynamic resource allocation and optimal performance as the application grows. Regularly review and update scalability strategies to support long-term scalability and success.
 By incorporating these enhancements, the app can cater to a broader audience with diverse needs and preferences, offering a more comprehensive and user-friendly weather forecasting solution.
+
+City Name Formatting for Accuracy:
+Improve accuracy in weather data retrieval by enhancing city name formatting recognition. Consider accommodating variations like including the country code (e.g., "Osaka, JP" vs. "Osaka" vs. "Osaka, JP"). This adjustment ensures users receive precise weather information regardless of input variations, enhancing overall user experience and data reliability.

@@ -8,7 +8,7 @@
     <p>The current weather in <%= @city %> is:</p>
     <p>Temperature: <%= @weather['main']['temp'] %>°C</p>
     <p>Humidity: <%= @weather['main']['humidity'] %>%</p>
-    <p>Wind Speed: <%= @weather['wind']['speed'] %> km/h</p>
+    <p>Wind Speed: <%= @weather['wind']['speed'] %>m/h</p>
   <% else %>
     <p>No weather forecast for <%= @city %>. Please check spelling and try again</p>
   <% end %>

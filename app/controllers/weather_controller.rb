@@ -37,20 +37,6 @@ class WeatherController < ApplicationController
     @city = (params[:city] || 'Osaka').titleize
     service = WeatherService.new(ENV['OPENWEATHERMAP_API_KEY'])
     @weather = service.get_weather(@city)
-
-    if @weather.present? && @weather['main'].present?
-      @weather['main']['temp'] = convert_to_celsius(@weather['main']['temp']).round(2)
-      @weather['main']['humidity'] = @weather['main']['humidity']
-      @weather['wind']['speed'] = convert_to_kmh(@weather['wind']['speed']).round(2)
-    end
-  end
-
-  def convert_to_celsius(kelvin)
-    kelvin - 273.15
-  end
-
-  def convert_to_kmh(mps)
-    mps * 3.6
   end
 
   def calculate_requests_per_minute
