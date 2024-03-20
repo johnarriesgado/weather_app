@@ -1,0 +1,38 @@
+// Place all the styles related to the Weather controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  margin: 50px auto; /* Center the container horizontally and move it 50px from the top */
+  width: 300px; /* Set fixed width for the container */
+  padding: 20px; /* Add padding to the container */
+  border: 1px solid #f0f0f0; /* Add a 1px pastel color border */
+  background-color: #f9f9f9; /* Set background color */
+}
+
+.input-field {
+  width: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.submit-button {
+  width: auto;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}

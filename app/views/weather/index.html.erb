@@ -1,0 +1,15 @@
+<%= form_tag(weather_index_path, method: :get) do %>
+  <%= text_field_tag :city, @city, placeholder: 'Input City Name', class: 'input-field' %>
+  <%= submit_tag 'Get Weather', class: 'submit-button' %>
+<% end %>
+
+<div class="weather-info">
+  <% if @weather.present? && @weather['main'].present? %>
+    <p>The current weather in <%= @city %> is:</p>
+    <p>Temperature: <%= @weather['main']['temp'] %>°C</p>
+    <p>Humidity: <%= @weather['main']['humidity'] %>%</p>
+    <p>Wind Speed: <%= @weather['wind']['speed'] %> km/h</p>
+  <% else %>
+    <p>No weather forecast for <%= @city %>. Please check spelling and try again</p>
+  <% end %>
+</div>
