@@ -56,6 +56,9 @@ GET /weather/London
 ### Steps
 
 1. Clone the repository to your preferred location
+```
+git clone https://github.com/johnarriesgado/weather_app.git
+```
 2. Navigate to the project directory:
 ```
 cd weather_app
