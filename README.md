@@ -85,13 +85,6 @@ bundle exec rails s
 http://localhost:3000
 ```
 
-## Navigating Using API Endpoint
-To retrieve weather data for a specific city using the API endpoint, you can make a GET request to the following URL:
-```
-GET http://localhost:3000/weather/CityName
-```
-
-
 
 .
 .
