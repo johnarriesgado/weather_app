@@ -52,5 +52,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  ENV['OPENWEATHERMAP_API_KEY'] = '28c8486dfc4dece4ce62ebe7983a8aea'
+  ENV['OPENWEATHERMAP_API_KEY'] = 'sample'
 end
